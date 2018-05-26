@@ -13,6 +13,7 @@
 		3E2187B92004AFA6003949F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E2187B82004AFA6003949F3 /* Assets.xcassets */; };
 		3E2187BC2004AFA6003949F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E2187BA2004AFA6003949F3 /* LaunchScreen.storyboard */; };
 		3E4587442004B92E00EE868D /* Flowers_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3E4587432004B92E00EE868D /* Flowers_2.jpg */; };
+		3EB6421C20B8CF1500EC2013 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3EB6421B20B8CF1500EC2013 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +25,9 @@
 		3E2187BB2004AFA6003949F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E2187BD2004AFA6003949F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E4587432004B92E00EE868D /* Flowers_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Flowers_2.jpg; sourceTree = "<group>"; };
-		60D5C90060D852F000000001 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
-		60E33D1060E3387000000001 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		3EB6421B20B8CF1500EC2013 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FC54EB50FC54E5D000000001 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		FC5754F0FC57552000000001 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,10 +44,11 @@
 		3E2187A52004AFA6003949F3 = {
 			isa = PBXGroup;
 			children = (
+				3EB6421B20B8CF1500EC2013 /* README.md */,
 				3E2187B02004AFA6003949F3 /* CVPixelBufferConversionSample */,
 				3E2187AF2004AFA6003949F3 /* Products */,
-				60D5CF0060D7FA4000000001 /* Configuration */,
-				60E343F060E347C000000001 /* LICENSE */,
+				FC54EFE0FC54F05000000001 /* Configuration */,
+				FC602100FC6020D000000001 /* LICENSE */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,18 +74,18 @@
 			path = CVPixelBufferConversionSample;
 			sourceTree = "<group>";
 		};
-		60D5CF0060D7FA4000000001 /* Configuration */ = {
+		FC54EFE0FC54F05000000001 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				60D5C90060D852F000000001 /* SampleCode.xcconfig */,
+				FC54EB50FC54E5D000000001 /* SampleCode.xcconfig */,
 			);
 			name = Configuration;
 			sourceTree = "<group>";
 		};
-		60E343F060E347C000000001 /* LICENSE */ = {
+		FC602100FC6020D000000001 /* LICENSE */ = {
 			isa = PBXGroup;
 			children = (
-				60E33D1060E3387000000001 /* LICENSE.txt */,
+				FC5754F0FC57552000000001 /* LICENSE.txt */,
 			);
 			name = LICENSE;
 			path = LICENSE;
@@ -116,11 +119,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = Apple;
 				TargetAttributes = {
 					3E2187AD2004AFA6003949F3 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -150,6 +154,7 @@
 			files = (
 				3E2187BC2004AFA6003949F3 /* LaunchScreen.storyboard in Resources */,
 				3E2187B92004AFA6003949F3 /* Assets.xcassets in Resources */,
+				3EB6421C20B8CF1500EC2013 /* README.md in Resources */,
 				3E2187B72004AFA6003949F3 /* Main.storyboard in Resources */,
 				3E4587442004B92E00EE868D /* Flowers_2.jpg in Resources */,
 			);
@@ -191,7 +196,7 @@
 /* Begin XCBuildConfiguration section */
 		3E2187BE2004AFA6003949F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 60D5C90060D852F000000001 /* SampleCode.xcconfig */;
+			baseConfigurationReference = FC54EB50FC54E5D000000001 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -204,6 +209,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -211,6 +217,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -249,7 +256,7 @@
 		};
 		3E2187BF2004AFA6003949F3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 60D5C90060D852F000000001 /* SampleCode.xcconfig */;
+			baseConfigurationReference = FC54EB50FC54E5D000000001 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -262,6 +269,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -269,6 +277,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -300,7 +309,7 @@
 		};
 		3E2187C12004AFA6003949F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 60D5C90060D852F000000001 /* SampleCode.xcconfig */;
+			baseConfigurationReference = FC54EB50FC54E5D000000001 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -310,14 +319,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.CVPixelBufferConversionSample${SAMPLE_CODE_DISAMBIGUATOR}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		3E2187C22004AFA6003949F3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 60D5C90060D852F000000001 /* SampleCode.xcconfig */;
+			baseConfigurationReference = FC54EB50FC54E5D000000001 /* SampleCode.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -327,7 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.CVPixelBufferConversionSample${SAMPLE_CODE_DISAMBIGUATOR}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

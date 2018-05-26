@@ -8,7 +8,7 @@ vImage supports reading from and writing to Core Video pixel buffers. This sampl
 
 The example below shows an image before (on left) and after (on right) histogram equalization:
 
-![Photos showing original and equalized images.](Documentation/vImage_equalization.png)
+![Photos showing original and equalized images.](Documentation/histogramEqualization_2x.png)
 
 This sample walks you through the steps for reading from and writing to Core Video pixel buffers:
 
@@ -46,15 +46,15 @@ class EqualizationImageProcessorKernel: CIImageProcessorKernel {
         renderingIntent: .defaultIntent)
     
     override class var outputFormat: CIFormat {
-        return kCIFormatBGRA8
+        return CIFormat.BGRA8
     }
     
     override class func formatForInput(at input: Int32) -> CIFormat {
-        return kCIFormatBGRA8
+        return CIFormat.BGRA8
     }
     
     override class func process(with inputs: [CIImageProcessorInput]?,
-                                arguments: [String : Any]?,
+                                arguments: [String: Any]?,
                                 output: CIImageProcessorOutput) throws {
         
         guard

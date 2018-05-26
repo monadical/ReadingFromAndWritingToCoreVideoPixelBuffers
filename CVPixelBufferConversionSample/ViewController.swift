@@ -48,15 +48,15 @@ class EqualizationImageProcessorKernel: CIImageProcessorKernel {
         renderingIntent: .defaultIntent)
     
     override class var outputFormat: CIFormat {
-        return kCIFormatBGRA8
+        return CIFormat.BGRA8
     }
     
     override class func formatForInput(at input: Int32) -> CIFormat {
-        return kCIFormatBGRA8
+        return CIFormat.BGRA8
     }
     
     override class func process(with inputs: [CIImageProcessorInput]?,
-                                arguments: [String : Any]?,
+                                arguments: [String: Any]?,
                                 output: CIImageProcessorOutput) throws {
         
         guard
